@@ -15,4 +15,10 @@
         android:id="@+id/item3"
         android:title="קטגוריה 3"
         android:showAsAction="never"/>
+    <item
+        android:id="@+id/new_item"
+        android:title=" context menu"
+        android:icon="@android:drawable/ic_menu_add"
+        android:showAsAction="always"/>
+        />
 </menu>
