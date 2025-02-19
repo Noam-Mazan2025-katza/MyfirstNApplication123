@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    android:background="#4F5A78"
+
+    <item
+
+        android:id="@+id/item1"
+        android:title="קטגוריה 1"
+        android:showAsAction="never"
+
+
+    <item
+        android:id="@+id/item2"
+        android:title="קטגוריה 2"
+        android:showAsAction="never"/>
+    <item
+        android:id="@+id/item3"
+        android:title="קטגוריה 3"
+        android:showAsAction="never"/>
+</menu>
