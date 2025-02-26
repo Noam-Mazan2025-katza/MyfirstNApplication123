@@ -134,18 +134,29 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         switch (id) {
             case R.id.item1:
-                Toast.makeText(this, "קטגוריה 1 נבחרה", Toast.LENGTH_SHORT).show();
+                // יצירת Intent לאקטיביטי של קטגוריה 1
+                Intent intent1 = new Intent(this, guessing_number.class);
+                startActivity(intent1);
                 return true;
             case R.id.item2:
-                Toast.makeText(this, "קטגוריה 2 נבחרה", Toast.LENGTH_SHORT).show();
+                // יצירת Intent לאקטיביטי של קטגוריה 2
+                Intent intent2 = new Intent(this, Regulations.class);
+                startActivity(intent2);
                 return true;
             case R.id.item3:
-                Toast.makeText(this, "קטגוריה 3 נבחרה", Toast.LENGTH_SHORT).show();
+                // יצירת Intent לאקטיביטי של קטגוריה 3
+                Intent intent3 = new Intent(this, LinearActivity.class);
+                startActivity(intent3);
+                return true;
+            case R.id.main:
+                Intent intent4 = new Intent(this, MainActivity.class);
+                startActivity(intent4);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
+
 
     // יצירת תפריט Context Menu לתמונה
     @Override
@@ -157,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
     // טיפול בלחיצה על הפריט בתפריט ההקשר
     @Override
     public boolean onContextItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.new_item) {
+        if (item.getItemId() == R.id.main) {
 
             Intent intent = new Intent(this, NewActivity.class);
             startActivity(intent);
