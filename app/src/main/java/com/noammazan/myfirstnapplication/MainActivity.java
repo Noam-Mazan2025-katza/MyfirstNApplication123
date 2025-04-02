@@ -152,6 +152,11 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent4 = new Intent(this, MainActivity.class);
                 startActivity(intent4);
                 return true;
+            case R.id.settings:
+                // אם נבחרה קטגוריה 1, נווט לפעולה אחרת (למשל, Activity חדשה)
+                Intent intent = new Intent(this, Setting.class);
+                startActivity(intent);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
